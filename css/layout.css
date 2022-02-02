@@ -1,4 +1,35 @@
 /* CSS LAYOUT */
 /* **************************************************************** */
 
+/*standard*/
+header{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+/*ipad*/
+@media only screen and (min-width 768px) {
+    header{
+        background-color: brown;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    
+}
+/*desktop*/
+@media only screen and (min-width 1000px) {
+    header{
+        background-color: greenyellow;
+        display: flex;
+        padding: 15px;
+        
+    }
+    nav{
+        display: flex;
+        justify-content:  space-between;
+    }
+}
